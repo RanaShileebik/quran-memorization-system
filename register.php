@@ -4,7 +4,7 @@ include 'connect.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name     = $_POST['name'];
     $email    = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // تشفير الباسورد
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $role     = $_POST['role'];
 
     $sql = "INSERT INTO users (user_name, user_email, user_password, user_role) 
@@ -18,7 +18,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<!-- نموذج التسجيل -->
 <form method="POST" action="">
     <label>الاسم:</label><br>
     <input type="text" name="name" required><br>

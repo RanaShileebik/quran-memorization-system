@@ -2,7 +2,7 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$database = "halaqat_db"; // غيريها لو اسم قاعدتك مختلف
+$database = "halaqat_db";
 
 $conn = new mysqli($host, $username, $password, $database);
 
